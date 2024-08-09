@@ -9,16 +9,9 @@ const MainMenu = ({ toggleSubMenu, navbarPlacement }) => {
         data-in="fadeInDown"
         data-out="fadeOutUp"
       >
-        <li className="dropdown ">
-          <Link
-            href="#"
-            className="dropdown-toggle active"
-            data-toggle="dropdown"
-            onClick={toggleSubMenu}
-          >
-            Home
-          </Link>
-          <ul className="dropdown-menu">
+        <li>
+          <Link href="/">Home</Link>
+          {/* <ul className="dropdown-menu">
             <li>
               <Link href="/">Consulting Business</Link>
             </li>
@@ -37,18 +30,21 @@ const MainMenu = ({ toggleSubMenu, navbarPlacement }) => {
             <li>
               <Link href="/software-landing">Software Landing</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
-        <li className="dropdown">
-          <Link
-            href="#"
+        <li>
+          {/* <Link
+            href="/about-us"
             className="dropdown-toggle"
             data-toggle="dropdown"
             onClick={toggleSubMenu}
           >
             About Us
-          </Link>
-          <ul className="dropdown-menu">
+          </Link> */}
+
+          <Link href="/about-us">About Us</Link>
+
+          {/* <ul className="dropdown-menu">
             <li>
               <Link href="/about-us">About Us</Link>
             </li>
@@ -70,7 +66,7 @@ const MainMenu = ({ toggleSubMenu, navbarPlacement }) => {
             <li>
               <Link href="/not-found">Error Page</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="dropdown">
           <Link
@@ -109,7 +105,9 @@ const MainMenu = ({ toggleSubMenu, navbarPlacement }) => {
                         <li><Link href="/blog-single-with-sidebar/1">Blog Single With Sidebar</Link></li>
                     </ul>
                 </li> */}
-        <li>{/* <Link href="/contact-us">contact</Link> */}</li>
+        <li>
+          <Link href="/contact-us">contact</Link>
+        </li>
       </ul>
     </>
   );
