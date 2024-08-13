@@ -69,22 +69,23 @@ const MainMenu = ({ toggleSubMenu, navbarPlacement }) => {
           </ul> */}
         </li>
         <li className="dropdown">
-          <Link
+          <Link href="/project">Products</Link>
+          {/* <Link
             href="project"
             className="dropdown-toggle"
             data-toggle="dropdown"
             onClick={toggleSubMenu}
           >
             Products
-          </Link>
-          <ul className="dropdown-menu">
+          </Link> */}
+          {/* <ul className="dropdown-menu">
             <li>
               <Link href="/project">Project style one</Link>
             </li>
             <li>
               <Link href="/project-details/1">Project Details</Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
         {/* <li className="dropdown">
                     <Link href="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Services</Link>

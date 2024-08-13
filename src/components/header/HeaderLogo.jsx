@@ -48,7 +48,6 @@ const HeaderLogo = ({ openMenu }) => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // Adjust the scroll value as needed
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -57,7 +56,6 @@ const HeaderLogo = ({ openMenu }) => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
