@@ -59,7 +59,7 @@ const MainHeaderStyle1 = () => {
                   <div className="attr-nav">
                     <ul>
                       <li className="button">
-                        <Link href="/contact-us">Register</Link>
+                        <Link href="/register">Register</Link>
                       </li>
                     </ul>
                   </div>
@@ -78,7 +78,10 @@ const MainHeaderStyle1 = () => {
                 </div> */}
 
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-5 col-7 ">
-                  <button className="login-button">Login</button>
+                  <Link href="/login">
+                    {" "}
+                    <button className="login-button">Login</button>
+                  </Link>
                 </div>
               </div>
             </div>

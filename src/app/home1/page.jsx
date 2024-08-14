@@ -4,6 +4,7 @@ import AboutStyle1 from "@/components/about/AboutStyle1";
 import BannerStyle1 from "@/components/banner/BannerStyle1";
 import BlogStyle1 from "@/components/blog/BlogStyle1";
 import ChooseStyle1 from "@/components/choose/ChooseStyle1";
+
 import PartnerStyle1 from "@/components/partner/PartnerStyle1";
 import ProcessStyle1 from "@/components/process/ProcessStyle1";
 import ProjectStyle1 from "@/components/project/ProjectStyle1";
