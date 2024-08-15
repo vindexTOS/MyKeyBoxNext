@@ -1,8 +1,16 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { toast } from "react-toastify";
 
 const ContactForm = () => {
+  const usernameRef = useRef(null);
+
+  useEffect(() => {
+    usernameRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    usernameRef.current.focus();
+  }, []);
+
   const handleForm = (event) => {
     event.preventDefault();
     event.target.reset();
@@ -38,6 +46,7 @@ const ContactForm = () => {
                 placeholder="Email*"
                 type="email"
                 autoComplete="off"
+                ref={usernameRef}
                 required
               />
               <span className="alert-error"></span>

@@ -6228,7 +6228,8 @@ p {
 }
 
 .pricing-style-one .pricing-header h4 {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .pricing-style-one .pricing-header span {

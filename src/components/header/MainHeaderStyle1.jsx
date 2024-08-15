@@ -54,7 +54,10 @@ const MainHeaderStyle1 = () => {
                   />
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7 ">
+              <div
+                className="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7 "
+                style={{ paddingRight: 5 }}
+              >
                 <div className="attr-right">
                   <div className="attr-nav">
                     <ul>

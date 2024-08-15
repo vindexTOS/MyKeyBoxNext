@@ -1,18 +1,23 @@
-/* styles.css */
 .login-button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
-  padding: 8px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
   text-align: center;
+  /* font-weight: bold; */
   margin-top: 4px;
-  width: 105px;
 
-  font-weight: bold;
-
-  transition: background-color 0.3s ease;
+  border: none;
+  width: 90px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: white;
+  transform: scale(1.1);
+  color: black;
 }

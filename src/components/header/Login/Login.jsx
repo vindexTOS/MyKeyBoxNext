@@ -1,9 +1,21 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 import "../../../../public/assets/css/chackbox.css";
 
 const Login = () => {
+  const usernameRef = useRef(null);
+
+  // useEffect(() => {
+  //   usernameRef.current.focus();
+  // }, []);
+
+  useEffect(() => {
+    usernameRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    usernameRef.current.focus();
+  }, []);
+
   const handleForm = (event) => {
     event.preventDefault();
     event.target.reset();
@@ -24,6 +36,7 @@ const Login = () => {
                 type="text"
                 autoComplete="off"
                 required
+                ref={usernameRef}
               />
               <span className="alert-error"></span>
             </div>
