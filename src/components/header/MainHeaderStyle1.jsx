@@ -77,7 +77,7 @@ const MainHeaderStyle1 = () => {
               >
                 <div className="auth-container">
                   <button className="auth-button" onClick={toggleAuthOptions}>
-                    Authorization
+                    Auth
                   </button>
                   {showAuthOptions && (
                     <div className="auth-options">
