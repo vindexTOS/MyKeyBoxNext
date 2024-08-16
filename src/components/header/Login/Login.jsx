@@ -1,8 +1,9 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { toast } from "react-toastify";
+import "../../../../public/assets/css/chackbox.css";
 
-const ContactForm = () => {
+const Login = () => {
   const usernameRef = useRef(null);
 
   useEffect(() => {
@@ -14,69 +15,67 @@ const ContactForm = () => {
   const handleForm = (event) => {
     event.preventDefault();
     event.target.reset();
-    toast.success("Thanks For Your Message");
+    toast.success("Login successful");
   };
 
   return (
     <>
-      <form className="contact-form contact-form" onSubmit={handleForm}>
-        {/* <div className="row">
+      <form className="login-form" onSubmit={handleForm}>
+        <div className="row">
           <div className="col-lg-12">
             <div className="form-group">
               <input
                 className="form-control"
-                id="name"
-                name="name"
-                placeholder="Name"
+                id="username"
+                name="username"
+                placeholder="Username*"
                 type="text"
                 autoComplete="off"
                 required
+                ref={usernameRef}
               />
               <span className="alert-error"></span>
             </div>
           </div>
-        </div> */}
-        <div className="row">
           <div className="col-lg-12">
             <div className="form-group">
               <input
                 className="form-control"
-                id="email"
-                name="email"
-                placeholder="Email*"
-                type="email"
+                id="password"
+                name="password"
+                placeholder="Password*"
+                type="password"
                 autoComplete="off"
-                ref={usernameRef}
                 required
               />
               <span className="alert-error"></span>
             </div>
           </div>
-          {/* <div className="col-lg-6">
-                        <div className="form-group">
-                            <input className="form-control" id="phone" name="phone" placeholder="Phone" type="text" autoComplete='off' required />
-                            <span className="alert-error"></span>
-                        </div>
-                    </div> */}
-        </div>
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="form-group comments">
-              <textarea
-                className="form-control"
-                id="comments"
-                name="comments"
-                placeholder="Enter Your Text *"
-                autoComplete="off"
-                required
-              ></textarea>
+
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="form-check">
+                <input
+                  className="inputChkekbox"
+                  type="checkbox"
+                  id="rememberMe"
+                />
+                <label className="form-check-label" htmlFor="rememberMe">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <a href="/forgotPassword" className="forgot-password">
+                Forgot Password?
+              </a>
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-lg-12">
             <button type="submit" name="submit" id="submit">
-              <i className="fa fa-paper-plane"></i> Send
+              <i className="fa fa-paper-plane"></i> Login
             </button>
           </div>
         </div>
@@ -88,4 +87,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Login;

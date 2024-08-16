@@ -1,0 +1,38 @@
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.form-check-input {
+  margin-right: 0.5rem;
+}
+
+.form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.form-check-label {
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.forgot-password {
+  margin-left: 80px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.inputChkekbox {
+  margin-top: 25px;
+}

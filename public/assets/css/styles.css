@@ -1,18 +1,98 @@
-/* styles.css */
 .login-button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
-  padding: 8px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
   text-align: center;
+
   margin-top: 4px;
-  width: 100px;
 
-  font-weight: bold;
-
-  transition: background-color 0.3s ease;
+  border: none;
+  width: 90px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .login-button:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: black;
+}
+
+@media (max-width: 300px) {
+  .login-button {
+    display: none;
+  }
+
+  .auth-buttons {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .auth-buttons {
+    display: none;
+  }
+}
+
+/* Add this to your styles.css or a relevant CSS module */
+
+.auth-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 180px;
+}
+
+.auth-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auth-button:hover {
   background-color: #0056b3;
+}
+
+.auth-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
+}
+
+.auth-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-options li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.auth-options li:last-child {
+  border-bottom: none;
+}
+
+.auth-options a {
+  text-decoration: none;
+  color: black;
+}
+
+.auth-options a:hover {
+  text-decoration: underline;
 }

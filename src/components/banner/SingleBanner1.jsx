@@ -23,7 +23,7 @@ const SingleBanner1 = ({ banner }) => {
                 <strong style={{ color: "orange" }}>ANYTIME 24/7</strong>
               </h2>
               <div className="button mt-40">
-                <Link className="btn-animation" href="/services">
+                <Link className="btn-animation" href="/pricing">
                   <i className="fas fa-arrow-right"></i> <span>SEE PRICES</span>
                 </Link>
               </div>

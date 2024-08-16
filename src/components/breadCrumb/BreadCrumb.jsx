@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import breadCrumbThumb from "@/assets/img/shape/50.png";
+import breadCrumbThumb from "@/assets/img/HeaderImg/ss2.jpg";
 import Link from "next/link";
 
 const BreadCrumb = ({ breadCrumb, title }) => {
