@@ -15,7 +15,7 @@ const ContactInfo = () => {
             </div>
             <div className="content">
               <h5 className="title">Hotline</h5>
-              <a href="">+4733378901</a>
+              <a href="">+995579988877</a>
             </div>
           </li>
           <li className="wow fadeInUp" data-wow-delay="300ms">
@@ -24,9 +24,7 @@ const ContactInfo = () => {
             </div>
             <div className="info">
               <h5 className="title">Our Location</h5>
-              <p>
-                55 Main Street, The Grand Avenue 2nd Block, <br /> New York City
-              </p>
+              <p>Tbilisi , Georgia</p>
             </div>
           </li>
           <li className="wow fadeInUp" data-wow-delay="500ms">
@@ -35,7 +33,7 @@ const ContactInfo = () => {
             </div>
             <div className="info">
               <h5 className="title">Official Email</h5>
-              <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+              <a href="mailto:info@agrul.com.com">m@mygps.ge</a>
             </div>
           </li>
         </ul>

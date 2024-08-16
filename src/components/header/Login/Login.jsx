@@ -6,10 +6,6 @@ import "../../../../public/assets/css/chackbox.css";
 const Login = () => {
   const usernameRef = useRef(null);
 
-  // useEffect(() => {
-  //   usernameRef.current.focus();
-  // }, []);
-
   useEffect(() => {
     usernameRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
@@ -70,7 +66,7 @@ const Login = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <a href="#" className="forgot-password">
+              <a href="/forgotPassword" className="forgot-password">
                 Forgot Password?
               </a>
             </div>

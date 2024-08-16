@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MainMenu from "./MainMenu";
 import HeaderLogo from "./HeaderLogo";
 import Link from "next/link";
@@ -7,25 +7,42 @@ import useStickyMenu from "../hooks/useStickyMenu";
 import useSubMenuToggle from "../hooks/useSubMenuToggle";
 import useSidebarMenu from "../hooks/useSidebarMenu";
 import Image from "next/image";
-import logo from "@/assets/img/logo.png";
+import logo from "@/assets/img/HeaderImg/logo-dark.png";
 import "../../../public/assets/css/styles.css";
 
 const MainHeaderStyle1 = () => {
   const isMenuSticky = useStickyMenu();
   const toggleSubMenu = useSubMenuToggle();
   const { isOpen, openMenu, closeMenu } = useSidebarMenu();
+  const [isMobile, setIsMobile] = useState(false);
+  const [showAuthOptions, setShowAuthOptions] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1200);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleAuthOptions = () => {
+    setShowAuthOptions(!showAuthOptions);
+  };
 
   return (
     <>
       <header>
         <nav
-          className={`navbar  mobile-sidenav navbar-style-one navbar-sticky navbar-default validnavs white navbar-fixed on menu-center no-full ${
+          className={`navbar mobile-sidenav navbar-style-one navbar-sticky navbar-default validnavs white navbar-fixed on menu-center no-full ${
             isMenuSticky ? "sticked" : "no-background"
           } ${isOpen ? "navbar-responsive force-sticky " : ""}`}
         >
           <div className="container">
-            <div className="row align-center  ">
-              <div className="col-xl-2 col-lg-3 col-md-2 col-sm-1 col-1    ">
+            <div className="row align-center">
+              <div className="col-xl-2 col-lg-3 col-md-2 col-sm-1 col-1">
                 <HeaderLogo openMenu={openMenu} />
               </div>
 
@@ -55,7 +72,33 @@ const MainHeaderStyle1 = () => {
                 </div>
               </div>
               <div
-                className="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7 "
+                className={`col-7 ${isMobile ? "" : "d-none"}`}
+                style={{ paddingRight: 5 }}
+              >
+                <div className="auth-container">
+                  <button className="auth-button" onClick={toggleAuthOptions}>
+                    Authorization
+                  </button>
+                  {showAuthOptions && (
+                    <div className="auth-options">
+                      <ul style={{ textAlign: "center" }}>
+                        <Link href="/register">
+                          {" "}
+                          <li>Register</li>
+                        </Link>
+                        <Link href="/login">
+                          {" "}
+                          <li>Login</li>
+                        </Link>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div
+                className={`col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7 ${
+                  isMobile ? "d-none" : ""
+                }`}
                 style={{ paddingRight: 5 }}
               >
                 <div className="attr-right">
@@ -67,22 +110,8 @@ const MainHeaderStyle1 = () => {
                     </ul>
                   </div>
                 </div>
-
-                {/* <div className="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7 ">
-                  <div className="attr-right">
-                    <div className="attr-nav">
-                      <ul>
-                        <li className="button">
-                          <Link href="/contact-us">Login</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> */}
-
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-5 col-7 ">
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-5 col-7">
                   <Link href="/login">
-                    {" "}
                     <button className="login-button">Login</button>
                   </Link>
                 </div>

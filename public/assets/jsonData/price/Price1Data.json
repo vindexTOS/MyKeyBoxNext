@@ -5,7 +5,7 @@
     "title": "10 Time Pass",
     "planCurrency": "$",
     "planPrice": "19.99",
-    "btnText": "Purchase Plan",
+    "btnText": "GET STARTED",
     "btnClass": "btn-dark",
     "listData": [
       {
@@ -22,7 +22,7 @@
 
     "planCurrency": "$",
     "planPrice": "24.99",
-    "btnText": "Purchase Plan",
+    "btnText": "GET STARTED",
     "btnClass": "btn-dark",
     "listData": [
       {
@@ -39,7 +39,7 @@
     "planCurrency": "$",
     "planPrice": "29.99",
     "planType": "/ Monthly",
-    "btnText": "Purchase Plan",
+    "btnText": "GET STARTED",
     "btnClass": "btn-theme active-btn",
     "listData": [
       {

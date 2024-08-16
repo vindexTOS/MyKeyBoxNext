@@ -1,10 +1,18 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { toast } from "react-toastify";
 import "../../../../public/assets/css/chackbox.css";
 import CustomSelect from "../../../components/select/CustomSelect";
 
 const Register = () => {
+  const usernameRef = useRef(null);
+
+  useEffect(() => {
+    usernameRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    usernameRef.current.focus();
+  }, []);
+
   const handleForm = (event) => {
     event.preventDefault();
     event.target.reset();
@@ -30,6 +38,7 @@ const Register = () => {
                 placeholder="CarrierName*"
                 type="text"
                 autoComplete="off"
+                ref={usernameRef}
                 required
               />
               <span className="alert-error"></span>
