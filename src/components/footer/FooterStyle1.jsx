@@ -102,7 +102,7 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                   special offers.
                 </p>
                 <div className={`f-item newsletter ${formStyle}`}>
-                  <FooterNewsLetter />
+                  {/* <FooterNewsLetter /> */}
                 </div>
                 <ul className="footer-social">
                   <SocialShare />

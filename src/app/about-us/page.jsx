@@ -14,7 +14,15 @@ const AboutUsPage = () => {
   return (
     <>
       <LayoutStyle7 breadCrumb="About-us" title="About Us">
+        <div
+          style={{
+            marginLeft: 300,
+          }}
+        >
+          <TestimonialStyle1 />
+        </div>
         <AboutStyle1 />
+
         {/* <ProcessStyle1 sectionClass="bg-gray" />
         <PartnerStyle1 sectionClass="default-padding" />
         <TeamStyle1 sectionClass="bg-gray" teamTitle={true} />

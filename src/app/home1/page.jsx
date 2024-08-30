@@ -24,18 +24,17 @@ const Home1 = () => {
     <>
       <LayoutStyle1>
         <BannerStyle1 />
+        <ProjectStyle1 />
+        <TestimonialStyle1 />
+        <AboutStyle2 sectionClass="bg-gray" />
         {/* <AboutStyle1 />
         <ServicesStyle1 />
         <ProcessStyle1 />
         <ChooseStyle1 />
         <PartnerStyle1 sectionClass="default-padding" />
-        <TeamStyle1 sectionClass="bg-gray" teamTitle={true} /> */}
-
-        <ProjectStyle1 />
-        {/* <RequestCallStyle1 /> */}
-        <TestimonialStyle1 />
-        <AboutStyle2 sectionClass="bg-gray" />
-        {/* <BlogStyle1 sectionClass="bg-gray" /> */}
+        <TeamStyle1 sectionClass="bg-gray" teamTitle={true} />
+        <RequestCallStyle1 />
+        <BlogStyle1 sectionClass="bg-gray" /> */}
       </LayoutStyle1>
     </>
   );
