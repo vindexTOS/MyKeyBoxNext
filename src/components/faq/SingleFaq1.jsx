@@ -3,17 +3,7 @@ import React from "react";
 import anim1Thumb from "@/assets/img/shape/anim-1.png";
 import anim2Thumb from "@/assets/img/shape/anim-2.png";
 
-const SingleFaq1 = ({ faq }) => {
-  const {
-    headingId,
-    btnClass,
-    collapseTarget,
-    expanded,
-    title,
-    text,
-    textClass,
-  } = faq;
-
+const SingleFaq1 = () => {
   return (
     <>
       <div>

@@ -21,8 +21,8 @@ const TestimonialStyle1 = ({ sectionClass, shapeBlue, shapeGreen }) => {
         <div className="container">
           <div className="row align-center">
             <div className="col-lg-4">
-              <div className="testimonial-thumb">
-                <div className="thumb-item">
+              <div className="">
+                {/* <div className="thumb-item">
                   <Image
                     src={illustration5}
                     width={500}
@@ -38,6 +38,27 @@ const TestimonialStyle1 = ({ sectionClass, shapeBlue, shapeGreen }) => {
                       <Image src={shape19} alt="illustration" />
                     )}
                   </div>
+                </div> */}
+                <div
+                  className="thumb"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <video
+                    width="200%"
+                    height="auto"
+                    controls
+                    alt="Video Not Found"
+                    autoPlay
+                  >
+                    <source
+                      src="/assets/video/MyKeyBox_OR.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
               </div>
             </div>

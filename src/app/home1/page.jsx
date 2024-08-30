@@ -1,5 +1,6 @@
 import LayoutStyle1 from "@/components/Layouts/LayoutStyle1";
 import AboutStyle1 from "@/components/about/AboutStyle1";
+import AboutStyle2 from "@/components/about/AboutStyle2";
 
 import BannerStyle1 from "@/components/banner/BannerStyle1";
 import BlogStyle1 from "@/components/blog/BlogStyle1";
@@ -28,11 +29,13 @@ const Home1 = () => {
         <ProcessStyle1 />
         <ChooseStyle1 />
         <PartnerStyle1 sectionClass="default-padding" />
-        <TeamStyle1 sectionClass="bg-gray" teamTitle={true} />
+        <TeamStyle1 sectionClass="bg-gray" teamTitle={true} /> */}
+
         <ProjectStyle1 />
-        <RequestCallStyle1 />
+        {/* <RequestCallStyle1 /> */}
         <TestimonialStyle1 />
-        <BlogStyle1 sectionClass="bg-gray" /> */}
+        <AboutStyle2 sectionClass="bg-gray" />
+        {/* <BlogStyle1 sectionClass="bg-gray" /> */}
       </LayoutStyle1>
     </>
   );

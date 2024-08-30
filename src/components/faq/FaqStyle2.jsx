@@ -12,9 +12,7 @@ const FaqStyle2 = () => {
               Privacy & Policy See More
             </h2>
             <div className="accordion" id="faqAccordion">
-              {Faq1Data.map((faq) => (
-                <SingleFaq1 faq={faq} key={faq.id} />
-              ))}
+              <SingleFaq1 />
             </div>
           </div>
         </div>
