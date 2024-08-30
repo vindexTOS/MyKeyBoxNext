@@ -38,7 +38,7 @@ const Register = () => {
                 placeholder="CarrierName*"
                 type="text"
                 autoComplete="off"
-                ref={usernameRef}
+           
                 required
               />
               <span className="alert-error"></span>
@@ -83,10 +83,10 @@ const Register = () => {
                 autoComplete="off"
                 required
               />
-              <span className="alert-error"></span>
+              <span  ref={usernameRef} className="alert-error"></span>
             </div>
           </div>
-          <div className="col-lg-12">
+          <div  className="col-lg-12">
             <div className="form-group">
               <input
                 className="form-control"
@@ -100,7 +100,7 @@ const Register = () => {
               <span className="alert-error"></span>
             </div>
           </div>
-          <div className="col-lg-12">
+          <div      className="col-lg-12">
             <div className="form-group">
               <input
                 className="form-control"
