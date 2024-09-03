@@ -1,0 +1,41 @@
+.testimonial-style-one-area {
+  /* Adjust padding as needed */
+  padding: 2rem; /* Example padding */
+}
+
+.thumb-container {
+  position: relative;
+  width: 130%; /* Adjust width to 100% for responsiveness */
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.thumb {
+  width: 100%;
+}
+
+.testimonial-carousel .swiper {
+  /* Ensure the swiper adjusts to the container */
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .testimonial-style-one-area {
+    /* Adjust padding or layout for small screens */
+    padding: 1rem; /* Example padding for smaller screens */
+  }
+
+  .col-lg-4,
+  .col-lg-7 {
+    /* Stack columns vertically on small screens */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .thumb-container {
+    width: 100%;
+  }
+
+  .testimonial-carousel {
+    margin-top: 1rem; /* Add margin to separate elements */
+  }
+}

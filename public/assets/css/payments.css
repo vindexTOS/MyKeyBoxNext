@@ -1,0 +1,41 @@
+/* CSS for responsiveness
+@media (max-width: 767px) {
+  .d-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .w-md-50 {
+    width: 100% 
+  }
+  .ms-md-3 {
+    margin-left: 0;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-flex {
+    flex-direction: row;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .ms-md-3 {
+    margin-left: 1rem;
+  }
+} */
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: block;
+  }
+}

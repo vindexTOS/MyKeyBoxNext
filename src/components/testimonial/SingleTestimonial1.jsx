@@ -11,7 +11,7 @@ const SingleTestimonial1 = ({ testimonial }) => {
           marginLeft: 100,
         }}
       >
-        <div className="testimonial-style-one">
+        <div className="testimonial-style-three ">
           <div className="item">
             <div className="content">
               <div className="rating">
