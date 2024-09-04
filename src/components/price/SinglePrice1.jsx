@@ -58,8 +58,11 @@ const SinglePrice1 = ({ price }) => {
               </li>
             ))}
           </ul>
-          <Link className={`btn mt-25 btn-sm animation ${btnClass}`} href="pay-stripe">
-            {btnText}
+          <Link
+            className={`btn mt-25 btn-sm animation ${btnClass}`}
+            href="pay-stripe"
+          >
+            GET STARTED
           </Link>
         </div>
       </div>

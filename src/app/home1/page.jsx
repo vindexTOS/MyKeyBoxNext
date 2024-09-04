@@ -1,6 +1,9 @@
 import LayoutStyle1 from "@/components/Layouts/LayoutStyle1";
-import AboutStyle1 from "@/components/about/AboutStyle1";
+import About1Card from "@/components/about/About1Card";
+
 import AboutStyle2 from "@/components/about/AboutStyle2";
+import AboutStyle3 from "@/components/about/AboutStyle3";
+import AboutStyle4 from "@/components/about/AboutStyle4";
 
 import BannerStyle1 from "@/components/banner/BannerStyle1";
 import BlogStyle1 from "@/components/blog/BlogStyle1";
@@ -25,8 +28,12 @@ const Home1 = () => {
       <LayoutStyle1>
         <BannerStyle1 />
         <ProjectStyle1 />
-        <TestimonialStyle1 />
+        <About1Card />
         <AboutStyle2 sectionClass="bg-gray" />
+        <AboutStyle3 />
+        <AboutStyle4 sectionClass="bg-gray" />
+
+        {/* <TestimonialStyle1 /> */}
         {/* <AboutStyle1 />
         <ServicesStyle1 />
         <ProcessStyle1 />

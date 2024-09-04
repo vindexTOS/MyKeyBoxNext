@@ -1,4 +1,5 @@
 import LayoutStyle7 from "@/components/Layouts/LayoutStyle7";
+import About1Card from "@/components/about/About1Card";
 import AboutStyle1 from "@/components/about/AboutStyle1";
 import PartnerStyle1 from "@/components/partner/PartnerStyle1";
 import ProcessStyle1 from "@/components/process/ProcessStyle1";
@@ -14,13 +15,7 @@ const AboutUsPage = () => {
   return (
     <>
       <LayoutStyle7 breadCrumb="About-us" title="About Us">
-        <div
-          style={{
-            marginLeft: 300,
-          }}
-        >
-          <TestimonialStyle1 />
-        </div>
+        <About1Card />
         <AboutStyle1 />
 
         {/* <ProcessStyle1 sectionClass="bg-gray" />

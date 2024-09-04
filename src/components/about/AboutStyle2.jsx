@@ -33,11 +33,13 @@ const AboutStyle2 = ({ sectionClass }) => {
               </div>
             </div>
             <div className="about-style-two col-lg-6 offset-lg-1">
-              <h1 className="sub-heading">Information</h1>
+              <h1 className="sub-heading">
+                MyKeyBox Virtual Service Advisor Kiosk
+              </h1>
               <p>
-                Our smart service kiosks offer a self-led check in option that’s
-                proven to increase revenue, improve customer experience, and
-                streamline operations.
+                The Virtual Service Advisor provides customers a self-led
+                service check-in to help lower wait times, speed up the process,
+                and allow dealerships to capture additional profits.
               </p>
               <div className="default-features mt-30 row">
                 {/* <div
