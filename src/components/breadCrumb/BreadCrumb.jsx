@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import breadCrumbThumb from "@/assets/img/HeaderImg/ss2.jpg";
+import breadCrumbThumb from "@/assets/img/cars/dd.jpg";
 import Link from "next/link";
 
 const BreadCrumb = ({ breadCrumb, title }) => {
@@ -8,10 +8,10 @@ const BreadCrumb = ({ breadCrumb, title }) => {
     <>
       <div
         className="breadcrumb-area bg-cover shadow dark text-center text-light"
-        style={{ backgroundImage: "url(/assets/img/banner/10.jpg)" }}
+        style={{ backgroundImage: "url(/assets/img/cars/bb.jpg)" }}
       >
         <div className="breadcrum-shape">
-          <Image src={breadCrumbThumb} alt="Image Not Found" />
+          {/* <Image src={breadCrumbThumb} alt="Image Not Found" /> */}
         </div>
         <div className="container">
           <div className="row">

@@ -3,7 +3,7 @@ import LayoutStyle7 from "@/components/Layouts/LayoutStyle7";
 import React from "react";
 
 export const metadata = {
-  title: "Login",
+  title: "Register",
 };
 
 const RegisterComponent = () => {

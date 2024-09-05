@@ -106,7 +106,7 @@ const CheckoutForm = () => {
 
   return (
     <div
-      className="d-flex flex-column flex-md-row justify-content-evenly align-items-start mt-20 about-style-two-area overflow-hidden bg-contain default-padding"
+      className="d-flex flex-column flex-md-row justify-content-evenly align-items-start mt-10 about-style-two-area overflow-hidden bg-contain default-padding"
       style={{
         minHeight: "500px",
         backgroundImage: `url(/assets/img/shape/29.png)`,
