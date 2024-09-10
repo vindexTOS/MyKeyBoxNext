@@ -83,11 +83,9 @@ const MainHeaderStyle1 = () => {
                     <div className="auth-options">
                       <ul style={{ textAlign: "center" }}>
                         <Link href="/register">
-                      
                           <li>Register</li>
                         </Link>
                         <Link href="/login">
-                         
                           <li>Login</li>
                         </Link>
                       </ul>
