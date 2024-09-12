@@ -31,6 +31,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+            <head>
+            <link rel="icon" href="/favicon.png"  type="image/png" sizes="42x42" />      </head>
       <body className={`${outfit.className} ${manrope.className}`}>
         <ToastContainer />
         <Dependency />
